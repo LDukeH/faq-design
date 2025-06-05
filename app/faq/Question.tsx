@@ -1,9 +1,8 @@
 "use client";
 
-import PlusIcon from "@/app/assets/icon-plus.svg";
-import MinusIcon from "@/app/assets/icon-minus.svg";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 
 interface QuestionProps {
   ask: string;
@@ -21,7 +20,21 @@ export function Question({ question }: { question: QuestionProps }) {
       >
         <span>{question.ask}</span>
         <div className="group-hover:brightness-0 transition-all duration-300">
-          {!isOpen ? <PlusIcon /> : <MinusIcon />}
+          {!isOpen ? (
+            <Image
+              alt="Plus Icon"
+              src="./icon-plus.svg"
+              height="24"
+              width="24"
+            />
+          ) : (
+            <Image
+              alt="Plus Icon"
+              src="./icon-minus.svg"
+              height="24"
+              width="24"
+            />
+          )}
         </div>
       </button>
 
