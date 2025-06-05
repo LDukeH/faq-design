@@ -1,5 +1,5 @@
-import StarIcon from "@/public/icon-star.svg";
 import { Question } from "./Question";
+import Image from "next/image";
 
 interface QuestionProps {
   ask: string;
@@ -33,7 +33,7 @@ export function Faq() {
   return (
     <div>
       <div className="w-full flex items-center gap-8 text-5xl font-bold text-textPrimary">
-        <StarIcon />
+        <Image alt="Star Icon" src="/icon-star.svg" height={48} width={48} />
         FAQs
       </div>
       <div className="mt-8 flex flex-col gap-6 h-96 overflow-y-scroll py-4 w-full scrollbar-hide">

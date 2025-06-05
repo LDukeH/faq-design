@@ -24,15 +24,15 @@ export function Question({ question }: { question: QuestionProps }) {
             <Image
               alt="Plus Icon"
               src="/icon-plus.svg"
-              height="24"
-              width="24"
+              height={24}
+              width={24}
             />
           ) : (
             <Image
-              alt="Plus Icon"
+              alt="Minus Icon"
               src="/icon-minus.svg"
-              height="24"
-              width="24"
+              height={24}
+              width={24}
             />
           )}
         </div>
