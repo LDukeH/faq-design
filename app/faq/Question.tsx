@@ -1,7 +1,7 @@
 "use client";
 
-import PlusIcon from "@/public/icon-plus.svg";
-import MinusIcon from "@/public/icon-minus.svg";
+import PlusIcon from "@/app/assets/icon-plus.svg";
+import MinusIcon from "@/app/assets/icon-minus.svg";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
