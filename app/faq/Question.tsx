@@ -10,7 +10,7 @@ interface QuestionProps {
 }
 
 export function Question({ question }: { question: QuestionProps }) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="w-full relative">
@@ -23,14 +23,14 @@ export function Question({ question }: { question: QuestionProps }) {
           {!isOpen ? (
             <Image
               alt="Plus Icon"
-              src="./icon-plus.svg"
+              src="/icon-plus.svg"
               height="24"
               width="24"
             />
           ) : (
             <Image
               alt="Plus Icon"
-              src="./icon-minus.svg"
+              src="/icon-minus.svg"
               height="24"
               width="24"
             />
